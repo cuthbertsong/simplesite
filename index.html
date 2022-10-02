@@ -11,8 +11,8 @@
         let text = "";
         let list = q.split("~");
         for (var i=0;i<list.length;i++) {
-            text = text + "<p>" + list[i].split("^")[0] + ".</p><p>two...</p><p>one...</p>";
-            text = text + "<p>" + list[i].split("^")[1] + ".</p>"; 
+            text = text + "<p>" + list[i].split("^")[0] + "...</p>";
+            text = text + "<p>" + list[i].split("^")[1] + "...</p>"; 
         }
         document.getElementById("content").innerHTML = text;
     </script>
