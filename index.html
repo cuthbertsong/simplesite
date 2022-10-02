@@ -8,10 +8,10 @@
     <div id="content"/>
     <script>
         let q = "American Revolutionary War begins^ April 1775~Turgot is dismissed^ May 1776~Necker apointed^ 22 October 1776";
-        let text = "<h1>French Revolution... Begin Exam.</h1><p>5.</p><p>4.</p><p>3.</p><p>2.</p><p>1.</p>";
+        let text = "<h1>French Revolution... Begin Exam.</h1><p>5 seconds...</p><p>4 secconds...</p><p>3 seconds...</p><p>2 seconds...</p><p>1 seconds..</p>";
         let list = q.split("~");
         for (var i=0;i<list.length;i++) {
-            text = text + "<p>" + list[i].split("^")[0] + ".</p><p>5.</p><p>4.</p><p>3.</p><p>2.</p><p>1.</p>";
+            text = text + "<p>" + list[i].split("^")[0] + ".</p><p>5 seconds...</p><p>4 secconds...</p><p>3 seconds...</p><p>2 seconds...</p><p>1 seconds..</p>";
             text = text + "<p>" + list[i].split("^")[1] + ".</p>"; 
         }
         document.getElementById("content").innerHTML = text;
