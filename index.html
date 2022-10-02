@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="Description" CONTENT="Sample for Google assistant">
     <title>Sample for Google assistant</title>
+
+</head>
+
+<body>
+    <div id="content"/>
     <script>
         let q = "American Revolutionary War begins^ April 1775~Turgot is dismissed^ May 1776~Necker apointed^ 22 October 1776";
         let text = "<h1>French Revolution</h1>";
@@ -12,18 +17,8 @@
             text = text + "<p>" + list[i].split("^")[0] + "." + "10 9 8 7 6 5 4 3 2 1." + "</p>";
             text = text + "<p>" + list[i].split("^")[1] + "</p>"; 
         }
-        document.body.innerHTML = text;
+        document.getElementById("content").innerHTML = = text;
     </script>
-</head>
-
-<body>
-    <h1>A title</h1>
-    <p>
-    Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.Here is an text sample.
-    </p>
-    <p>
-        Here is an text sample.
-    </p>
 </body>
 
 </html>
