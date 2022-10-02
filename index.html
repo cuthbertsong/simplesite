@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <meta name="Description" CONTENT="Sample for Google assistant">
     <title>Sample for Google assistant</title>
+    <script>
+        let q = "American Revolutionary War begins^ April 1775~Turgot is dismissed^ May 1776~Necker apointed^ 22 October 1776";
+        let text = "<h1>French Revolution</h1>";
+        let list = q.split("~");
+        for (var i;i<list.length();i++ {
+            text = text + "<p>" + list[i].split("^")[0] + "." + "10 9 8 7 6 5 4 3 2 1." + "</p>";
+            text = text + "<p>" + list[i].split("^")[1] + "</p>"; 
+        }
+        document.body.innerHTML = text;
+    </script>
 </head>
 
 <body>
@@ -14,7 +24,6 @@
     <p>
         Here is an text sample.
     </p>
-
 </body>
 
 </html>
